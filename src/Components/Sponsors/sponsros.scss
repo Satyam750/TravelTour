@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+
+
+:root{
+    --primaryColor:hsl(233,52%,19%);
+    --secColor:hsl(233,16%,44%);
+    --hoverColor:hsl(8,100%,70%);
+    --backColor:#707070;
+    --grayText:hsl(0,0%,75%);
+    --bgColor:hsl(0,0%,100%);
+    --shadowColor:hsla(0,0%,0%,0.314);
+    --gradient:linear-gradient(to bottom, hsl(16,100%,71%), hsl(8,100%,70%));
+    --boxShadow:rgba(0,0,0,0.1) 0px 10px 15px -3px,
+    rgba(0,0,0,0.05) 0px 4px 6px -2px;
+
+    
+    --beggestFontSize : 2.4rem;
+    --h1FontSize:2.2rem;
+    --h2FontSize:1.25rem;
+    --h3FontSize:1rem;
+    --normalFontSize:0.938rem;
+    --smallFontSize:0.813rem;
+    --smallestFontSize:0.75rem;
+}
+
+.Sponsors{
+    padding: 2rem 0;
+    overflow-y: hidden;
+    .logos{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+
+        img{
+            width: 40%;
+            height: 30%;
+            filter: sepia(1);
+            cursor: pointer;
+
+            &:hover{
+               scale: 1.2;
+               transition: all .4s ease-in-out;
+            }
+        }
+     
+        .im2{
+            mix-blend-mode: multiply;
+            filter: contrast(1);
+            margin-top: -14%;
+        }
+        .im3{
+            margin-top: -20%;
+        }
+        .im4{
+            margin-top: -13%;
+        }
+        
+
+
+    }
+}
+
+
+@media screen and (min-width:786px) {
+  
+    .Sponsors{
+    //    display: flex;
+    padding-left: 15vw;
+    padding-right: 15vw;
+        
+        .logos{
+            display: flex;
+            // flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            margin-left: 16vw;
+            width: 30vw;
+            gap: 5vw;
+
+            .im2{
+                margin-top: 1vw;
+            }
+            .im3{
+                margin-top: 1vw;
+            }
+            .im4{
+                margin-top: 1vw;
+            }
+
+        }
+    }
+}

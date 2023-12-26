@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+
+
+:root{
+    --primaryColor:hsl(233,52%,19%);
+    --secColor:hsl(233,16%,44%);
+    --hoverColor:hsl(8,100%,70%);
+    --backColor:#707070;
+    --grayText:hsl(0,0%,75%);
+    --bgColor:hsl(0,0%,100%);
+    --shadowColor:hsla(0,0%,0%,0.314);
+    --gradient:linear-gradient(to bottom, hsl(16,100%,71%), hsl(8,100%,70%));
+    --boxShadow:rgba(0,0,0,0.1) 0px 10px 15px -3px,
+    rgba(0,0,0,0.05) 0px 4px 6px -2px;
+    --borderRadius:10px;
+
+    
+    --beggestFontSize : 2.4rem;
+    --h1FontSize:2.2rem;
+    --h2FontSize:1.25rem;
+    --h3FontSize:1rem;
+    --normalFontSize:0.938rem;
+    --smallFontSize:0.813rem;
+    --smallestFontSize:0.75rem;
+}
+.Footer{
+    padding: 4rem 1.5rem 1rem;
+    width: 100%;
+    border-radius: var(--borderRadius);
+    text-align: center;
+    background: var(--gradient);
+    margin: auto;
+
+    .secContainer{
+        align-items: flex-start;
+        .singleSection{
+            h2{
+
+                font-size: var(--beggestFontSize);
+                color: var(--bgColor);
+                padding-bottom:.5rem ;
+                font-weight: 800;
+            }
+            h3{
+                color: var(--primaryColor);
+                font-weight: 700;
+                font-size: var(--h3FontSize);
+            }
+            p{
+                font-size: var(--smallFontSize);
+                color: var(--secColor);
+
+            }
+            li{
+                display: block;
+                padding-top: 1rem;
+                font-weight: 400;
+                color: var(--secColor);
+                cursor: pointer;
+                &:hover{
+                    transform: translateX(5px);
+                    font-weight: 500;
+                    transition: .4s ease-in-out;
+                    color: var(--primaryColor);
+
+                }
+            }
+
+            .socials{
+                gap: .7rem;
+                padding: 1rem 0;
+                margin: auto;
+                justify-content: center;
+
+                .icon{
+                    font-size: 27px;
+                    color: var(--bgColor);
+
+                    &:hover{
+                        transform: translateY(-7px);
+                        transition: .4s ease-in-out;
+                        color: var(--primaryColor);
+
+                    }
+                }
+            }
+        }
+
+        .text{
+            font-size: var(--h3FontSize);
+            display: block;
+            padding-bottom: .5rem;
+            font-weight: 500;
+            color: var(--secColor);
+        }
+        .flex{
+            gap: .5rem;
+            margin: auto;
+            justify-content: center;
+
+            img{
+                width: 50%;
+                height: 50%;
+                cursor: pointer;
+            }
+            .image1{
+                margin-top: -42px;
+            }
+
+        }
+
+
+    }
+}
+
+
+@media screen and (min-width:786px) {
+
+    .Footer{
+        padding-left: 15vw;
+        padding-right: 15vw;
+        width: 80%;
+        height: 15vw;
+        .secContainer{
+            position: relative;
+            .head{
+                position: absolute;
+                left: -12vw;
+                h2{
+                    // margin-left: -7vw;
+                }
+                p{
+                    width: 15vw;
+                    // margin-left: 21vw;
+                }
+            }
+            .com{
+                // margin-left: -50vw;
+                position: absolute;
+                left: 9vw;
+            }
+            .con{
+                // margin-left: -70vw;
+                position: absolute;
+                left:21vw;
+            }
+            .more{
+                // margin-left: -60vw;
+                position: absolute;
+                left: 32vw;
+            }
+            .icse{
+                position: absolute;
+                left: 48vw;
+                top: -1vw;
+            }
+            .text{
+                position: absolute;
+                left: 47vw;
+                top: 2.5vw;
+                font-size: 1.1vw;
+                width: 10vw;
+            }
+            .lasticse{
+                position: absolute;
+                left: 47vw;
+                top: 5vw;
+                z-index: 9;
+                width: 15vw;
+                img{
+                    border-radius: 10vw;
+                    // margin-top: -5vw;
+                    // margin-top: 5vw;
+                }
+                .image1{
+                    margin-top: -1.8vw;
+
+                }
+            }
+        }
+    }
+}
